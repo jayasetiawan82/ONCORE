@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oncore by Clare Smyth</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- js -->
+    <script src="tabs.js" defer></script>
+    <script src="sidebar.js" defer></script>
+  </head>
+  <body>
+    <!-- Hero/header -->
+    <section>
+      <header id="nav" class="flex fixed-nav">
+        <div>
+          <button class="sidebar-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="logo-wrapper">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+      </header>
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul class="sidebar-links">
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">about</a>
+          </li>
+          <li>
+            <a href="#">menu</a>
+          </li>
+          <li>
+            <a href="#">reservation</a>
+          </li>
+          <li>
+            <a href="#">evenyt</a>
+          </li>
+          <li>
+            <a href="#">news</a>
+          </li>
+          <li>
+            <a href="#">career</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+          <div class="reservation-btn">
+            <a href="#">make reservation</a>
+          </div>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Menu -->
+    <section class="content-container">
+      <div class="menu-img right-img"></div>
+      <div class="left-content inline-padding">
+        <h2 class="uppercase fs-700">menu</h2>
+        <p>
+          The menu at Oncore features a selection of Core’s classic dishes,
+          including the unexpected yet celebrated centrepiece of Smyth’s London
+          restaurant, ‘Potato and Roe’. This signature dish, which pays homage
+          to Smyth’s farming childhood in Northern Ireland, gained recognition
+          due to her desire of combining sophisticated cooking with the
+          simplicity of style. Oncore also offers new dishes with a uniquely
+          Sydney flavour, drawing inspiration from the harbour and its
+          surrounds. 3 Course À La Carte Menu $250 Per Person (lunch only)7
+          Course Tasting Menu $340 Per Person7 Course Seasonal Menu $395 Per
+          Person Please note from 28 November 2023 - 14 January 2024 only one
+          Festive Tasting Menu will be available.
+        </p>
+        <a href="#" class="read-btn">read more</a>
+      </div>
+    </section>
+
+    <article class="menu">
+      <div class="menu-btn-container">
+        <button class="tab-btn active" data-id="classic">classic menu</button>
+        <button class="tab-btn" data-id="seasonal">seasonal</button>
+        <button class="tab-btn" data-id="alacarte">a la carte</button>
+      </div>
+      <article class="about-content">
+        <!-- single item -->
+        <div class="content active" id="classic">
+          <h4>classic</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur eum eaque recusandae ea blanditiis animi natus
+            aspernatur asperiores id officiis!
+          </p>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="content" id="seasonal">
+          <h4>seasonal</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur eum eaque recusandae ea blanditiis animi natus
+            aspernatur asperiores id officiis!
+          </p>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="content" id="alacarte">
+          <h4>a la carte</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur eum eaque recusandae ea blanditiis animi natus
+            aspernatur asperiores id officiis!
+          </p>
+        </div>
+        <!-- end of single item -->
+      </article>
+    </article>
+
+    <!-- footer -->
+    <footer class="bg-orange">
+      <h1 class="uppercase">oncore</h1>
+
+      <div>
+        <h2>sitemap</h2>
+        <ul>
+          <li>about</li>
+          <li>menu</li>
+          <li>news</li>
+          <li>clare smyth</li>
+          <li>meet the team</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>social</h2>
+        <ul>
+          <li>facebook</li>
+          <li>insta</li>
+          <li>youtube</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>location</h2>
+        <p>
+          Crown Sydney, Level 26/1 Barangaroo Ave, Barangaroo NSW 2000
+          <span>view on Google maps</span>
+        </p>
+      </div>
+
+      <div>
+        <h2>opening hours</h2>
+        <h3>lunch</h3>
+        <p>12pm - 3pm (Fri, Sat)</p>
+        <h3>dinner</h3>
+        <p>5:30pm - 10:30pm (Tue - Thu) 6pm - 11pm (Fri, Sat)</p>
+      </div>
+      <button>book now</button>
+      <button>+61 8871 7171</button>
+      <div class="copy-block letter-spacing-1 uppercase">
+        <p>
+          &copy oncore restaurant <span id="date"></span>. all rights reserved.
+        </p>
+      </div>
+    </footer>
+    <div class="reservation-btn">
+      <a href="#" class="read-btn">make reservation</a>
+    </div>
+  </body>
+</html>
