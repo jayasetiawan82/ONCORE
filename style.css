@@ -16,7 +16,7 @@
   --fs-400: 0.9375rem;
   --fs-300: 0.8rem;
   --fs-200: 0.7rem;
-  
+
   /* font-family */
   --ff-sans-serif: "Roboto", sans-serif;
   --ff-monospace: "Source Code Pro", monospace;
@@ -51,7 +51,6 @@
     --fs-400: 1.125rem;
   }
 }
-
 
 /* ----------------- */
 /* RESET */
@@ -271,8 +270,6 @@ select {
   font-size: var(--fs-200);
 }
 
-
-
 /* ----------------- */
 /* COMPONENTS*/
 /* ----------------- */
@@ -355,7 +352,6 @@ header {
   display: block;
 }
 
-
 section p {
   margin-bottom: 15px;
 }
@@ -395,7 +391,6 @@ section p {
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
- 
 }
 
 .sidebar ul li a {
@@ -411,7 +406,7 @@ section p {
 }
 
 @media (min-width: 45em) {
-  .top-resevation-btn{
+  .top-resevation-btn {
     padding-top: 20px;
   }
   .top-resevation-btn a {
@@ -479,29 +474,30 @@ section p {
     grid-row-start: 1;
   }
 
-  .right-content, .left-content {
+  .right-content,
+  .left-content {
     margin: auto 0;
   }
 
-  .menu-img, .bio-img, .private-dining-img {
-  height: 100vh;
+  .menu-img,
+  .bio-img,
+  .private-dining-img {
+    height: 100vh;
   }
-
 }
 @media (min-width: 45em) {
-  .right-content, .left-content {
+  .right-content,
+  .left-content {
     padding-inline: 6em;
   }
 }
 
 /* events */
-@media(min-width: 35em) {
+@media (min-width: 35em) {
   .event-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
   }
-
 }
 .event-img {
   background: url(assets/dining-2.jpg) no-repeat;
@@ -517,8 +513,6 @@ section p {
   z-index: 100;
   position: relative;
 }
-
-
 
 .read-btn-white {
   text-transform: uppercase;
@@ -538,8 +532,6 @@ section p {
   background-color: var(--clr-dark);
   opacity: 0.5;
 }
-
-
 
 .term-summary {
   justify-content: space-between;
@@ -611,7 +603,6 @@ section p {
   }
 }
 
-
 .tab-btn {
   border: none;
   padding: 20px;
@@ -635,4 +626,3 @@ section p {
 .content.active {
   display: block;
 }
-
