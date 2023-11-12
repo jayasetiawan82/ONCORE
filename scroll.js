@@ -9,7 +9,7 @@ const navBar = document.getElementById("nav")
 window.addEventListener("scroll", function(){
     const scrollHeight = this.window.scrollY
     const navHeight = navBar.getBoundingClientRect().height
-    
+
     if(scrollHeight > navHeight) {
         navBar.classList.add("fixed-nav")
     } else {
@@ -18,5 +18,5 @@ window.addEventListener("scroll", function(){
 
 
 
-    console.log(navHeight)
+
 })

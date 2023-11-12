@@ -10,13 +10,13 @@
   /* font-size */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.35rem);
   --fs-800: 3.5rem;
-  --fs-700: 2.5rem;
+  --fs-700: 2rem;
   --fs-600: 1.2rem;
   --fs-500: 1rem;
   --fs-400: 0.9375rem;
   --fs-300: 0.8rem;
   --fs-200: 0.7rem;
-
+  
   /* font-family */
   --ff-sans-serif: "Roboto", sans-serif;
   --ff-monospace: "Source Code Pro", monospace;
@@ -45,12 +45,13 @@
 @media (min-width: 45em) {
   :root {
     --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2rem;
+    --fs-700: 2.6rem;
+    --fs-600: 2.5rem;
     --fs-500: 1.75rem;
     --fs-400: 1.125rem;
   }
 }
+
 
 /* ----------------- */
 /* RESET */
@@ -270,9 +271,13 @@ select {
   font-size: var(--fs-200);
 }
 
+
+
 /* ----------------- */
 /* COMPONENTS*/
 /* ----------------- */
+
+/* header */
 
 header {
   color: black;
@@ -368,41 +373,6 @@ section p {
   padding: 20px 0 20px 0;
 }
 
-@media (min-width: 35em) {
-  .content-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-  }
-
-  .right-img {
-    grid-column-start: 2;
-  }
-
-  .left-content {
-    grid-row-start: 1;
-  }
-}
-
-.menu-img {
-  background: url(assets/dish-2.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-}
-
-.bio-img {
-  background: url(assets/clare\ smith\ -\ 1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.private-dining-img {
-  background: url(assets/dining-1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 /* sidebar */
 .sidebar {
   position: fixed;
@@ -471,6 +441,104 @@ section p {
   color: var(--clr-light);
 }
 
+/* main content */
+
+.menu-img {
+  background: url(assets/dish-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.bio-img {
+  background: url(assets/clare\ smith\ -\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.private-dining-img {
+  background: url(assets/dining-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+@media (min-width: 35em) {
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+
+  .right-img {
+    grid-column-start: 2;
+  }
+
+  .left-content {
+    grid-row-start: 1;
+  }
+
+  .right-content, .left-content {
+    margin: auto 0;
+  }
+
+  .menu-img, .bio-img, .private-dining-img {
+  height: 100vh;
+  }
+
+}
+@media (min-width: 45em) {
+  .right-content, .left-content {
+    padding-inline: 6em;
+  }
+}
+
+/* events */
+@media(min-width: 35em) {
+  .event-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+}
+.event-img {
+  background: url(assets/dining-2.jpg) no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+
+.overlay-background {
+  position: relative;
+}
+
+.event-img > * {
+  z-index: 100;
+  position: relative;
+}
+
+
+
+.read-btn-white {
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid var(--clr-light);
+  text-decoration: none;
+  color: var(--clr-light);
+  padding: 5px 25px 3px 25px;
+}
+.overlay-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-dark);
+  opacity: 0.5;
+}
+
 
 
 .term-summary {
@@ -527,33 +595,6 @@ section p {
   padding: 25px 0;
 }
 
-/* events */
-.event-img {
-  background: url(assets/dining-2.jpg) no-repeat;
-  background-size: cover;
-  z-index: 100;
-}
-
-.overlay-background {
-  position: relative;
-}
-
-.event-img > * {
-  z-index: 100;
-  position: relative;
-}
-
-.overlay-background::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--clr-dark);
-  opacity: 0.5;
-}
-
 /* ------- menu page----- */
 
 .menu-btn-container {
@@ -594,3 +635,4 @@ section p {
 .content.active {
   display: block;
 }
+
