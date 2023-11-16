@@ -499,6 +499,11 @@ section p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.event-heading {
+ border-bottom:solid 2px rgba(255,255,255,0.5);
+}
+
 .event-img {
   background: url(assets/dining-2.jpg) no-repeat;
   background-size: cover;
@@ -513,7 +518,6 @@ section p {
   z-index: 100;
   position: relative;
 }
-
 .read-btn-white {
   text-transform: uppercase;
   background: transparent;
@@ -522,6 +526,7 @@ section p {
   color: var(--clr-light);
   padding: 5px 25px 3px 25px;
 }
+
 .overlay-background::after {
   content: "";
   position: absolute;
@@ -533,6 +538,8 @@ section p {
   opacity: 0.5;
 }
 
+
+/* term summary */
 .term-summary {
   justify-content: space-between;
 }
@@ -579,6 +586,8 @@ section p {
 
 /* footer */
 
+
+
 .copy-block {
   background-color: var(--clr-dark);
   color: var(--clr-light);
@@ -586,6 +595,14 @@ section p {
   text-align: center;
   padding: 25px 0;
 }
+
+.footer > *.footer-block ul {
+ padding-left: 0; 
+}
+.footer > *.footer-block ul li {
+  text-transform: capitalize; 
+ }
+
 
 /* ------- menu page----- */
 
