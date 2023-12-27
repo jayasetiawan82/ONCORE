@@ -666,15 +666,15 @@ section p {
   border: none;
   padding: 20px;
   cursor: pointer;
-  background-color: #a0dac3;
+  background-color: var(--clr-gold);
 }
 
 .tab-btn:hover {
-  background-color: #ceede1;
+  background-color: #f3d161;
 }
 
 .tab-btn.active {
-  background-color: #ceede1;
+  background-color: #f3d161;
 }
 
 /* hide content */
