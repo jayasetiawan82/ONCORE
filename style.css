@@ -205,6 +205,7 @@ select {
   background-color: var(--clr-gold);
 }
 
+
 .text-dark {
   color: var(--clr-dark);
 }
@@ -268,6 +269,10 @@ select {
 }
 .fs-200 {
   font-size: var(--fs-200);
+}
+
+.fw {
+  font-weight: bolder;
 }
 
 /* ----------------- */
@@ -504,10 +509,31 @@ section p {
  border-bottom:solid 2px rgba(255,255,255,0.5);
 }
 
-.event-img {
+.event-img-1 {
   background: url(assets/dining-2.jpg) no-repeat;
+  
+}
+
+.event-img-2 {
+  background: url(assets/chritsmas.jpg) no-repeat;
+}
+
+.event-img-3 {
+  background: url(assets/coctail-1.jpg) no-repeat;
+  
+}
+
+.event-img-4 {
+  background: url(assets/clare-smith-2.jpg) no-repeat;
+}
+
+.event-img-5 {
+  background: url(assets/dish-1.jpg) no-repeat;
+}
+
+.event-img-1, .event-img-2, .event-img-3, .event-img-4, .event-img-5 {
   background-size: cover;
-  z-index: 100;
+  z-index: 10;
 }
 
 .overlay-background {
@@ -536,6 +562,7 @@ section p {
   height: 100%;
   background-color: var(--clr-dark);
   opacity: 0.5;
+  z-index: -1;
 }
 
 
@@ -585,8 +612,14 @@ section p {
 }
 
 /* footer */
+@media(min-width: 35em) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+  }
 
-
+}
 
 .copy-block {
   background-color: var(--clr-dark);
@@ -596,11 +629,20 @@ section p {
   padding: 25px 0;
 }
 
-.footer > *.footer-block ul {
- padding-left: 0; 
+.footer-wrapper .footer-right p {
+  max-width: 30em;
 }
-.footer > *.footer-block ul li {
+
+.footer-left > *.footer-block ul {
+ padding-left: 0;
+ margin-top: 0;
+}
+.footer-left > *.footer-block ul li {
   text-transform: capitalize; 
+ }
+
+ .footer-center {
+  padding-bottom: 1em;
  }
 
 
@@ -642,4 +684,32 @@ section p {
 
 .content.active {
   display: block;
+}
+
+.content {
+  text-align: center;
+}
+
+.content ul {
+  padding-left: 0;
+}
+
+.content h2 {
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.content li {
+  padding-bottom: 1em;
+}
+
+.content li > :first-child {
+ font-weight: 600;
+}
+
+.italic-center-par {
+  margin: 0 auto ;
+  max-width: 80vw;
+  font-style: italic;
+  padding-bottom: 1em;
 }
