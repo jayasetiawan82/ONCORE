@@ -351,6 +351,7 @@ header {
   width: 100%;
   background-color: #000;
   box-shadow: var(--light-shadow);
+  padding-bottom: 0;
 }
 
 .fixed-nav .logo-wrapper img {
@@ -375,6 +376,27 @@ section p {
 }
 
 /* sidebar */
+
+button {
+  background: transparent;
+  border-radius: 1rem solid;
+  border: none;
+}
+
+.hamburger {
+  fill: var(--clr-light);
+  cursor: pointer;
+}
+
+.sidebar-toggle:hover .middle {
+opacity: 0;
+}
+
+.sidebar-toggle .line {
+transition: 1s;
+transform-origin: center;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -391,17 +413,27 @@ section p {
 }
 
 .close-btn {
-  font-size: 1.75rem;
+  font-size: 2.7rem;
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  padding-left: 40px;
 }
+
+.close-btn:hover {
+  font-size: 3rem;
+}
+
 
 .sidebar ul li a {
   color: var(--clr-dark);
   font-size: var(--fs-600);
   text-transform: uppercase;
+}
+
+.sidebar ul li a:hover {
+  color: var(--clr-gold);
 }
 
 @media (min-width: 676px) {
@@ -502,6 +534,7 @@ section p {
   .event-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
   }
 }
 
@@ -612,6 +645,11 @@ section p {
 }
 
 /* footer */
+
+.footer-btn {
+  margin: .5em 0 .5em 0;
+}
+
 @media(min-width: 35em) {
   .footer-wrapper {
     display: flex;
@@ -713,3 +751,6 @@ section p {
   font-style: italic;
   padding-bottom: 1em;
 }
+
+
+

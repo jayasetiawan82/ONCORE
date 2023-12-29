@@ -1,0 +1,53 @@
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: hsl(48, 18%, 83%);
+}
+
+/* .example {
+    padding: 3rem;
+    max-width: 1200px;
+    display: flex;
+    gap: clamp(2rem, 8vw, 4rem);
+} */
+
+button {
+    background: transparent;
+    border-radius: 1rem solid;
+    border: none;
+}
+
+.hamburger {
+    fill: black;
+}
+
+
+.button-one .line {
+ transition: 1s;
+ transform-origin: center;
+}
+
+.button-one:hover .middle {
+    x: 25;
+}
+
+.button-one:hover :is(.top, .bottom) {
+    y: 45;
+}
+
+.button-one:hover .top {
+    rotate: 45deg;
+}
+
+.button-one:hover .middle {
+    opacity: 0;
+}
+
+.button-one:hover .bottom {
+    rotate: -45deg;
+}

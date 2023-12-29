@@ -16,7 +16,4 @@ window.addEventListener("scroll", function(){
         navBar.classList.remove("fixed-nav")
     }
 
-
-
-
 })

@@ -32,8 +32,37 @@
     <section class="hero">
       <header id="nav" class="flex">
         <div>
-          <button class="sidebar-toggle">
-            <i class="fas fa-bars"></i>
+          <button
+            class="sidebar-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <svg class="hamburger" viewbox="0 0 100 100" width="60">
+              <rect
+                class="line top"
+                width="80"
+                height="6"
+                x="10"
+                y="25"
+                rx="5"
+              ></rect>
+              <rect
+                class="line middle"
+                width="50"
+                height="6"
+                x="10"
+                y="45"
+                rx="5"
+              ></rect>
+              <rect
+                class="line bottom"
+                width="80"
+                height="6"
+                x="10"
+                y="65"
+                rx="5"
+              ></rect>
+            </svg>
           </button>
         </div>
         <div class="logo-wrapper">
@@ -69,7 +98,7 @@
             <a href="#">reservation</a>
           </li>
           <li>
-            <a href="#">evenyt</a>
+            <a href="#">event</a>
           </li>
           <li>
             <a href="#">news</a>
@@ -81,7 +110,7 @@
             <a href="#">contact</a>
           </li>
           <div class="reservation-btn">
-            <a href="#">make reservation</a>
+            <a href="#" class="read-btn">make reservation</a>
           </div>
         </ul>
       </aside>
@@ -165,53 +194,43 @@
       </div>
       <!-- event 2 -->
       <div class="overlay-background event-img-2 inline-padding">
-        <h1 class="uppercase fs-500 text-accent event-heading">
-          special event
-        </h1>
-        <h2 class="uppercase fs-500 text-accent">christmas day at oncore</h2>
+        <h1 class="uppercase fs-500 text-accent event-heading">awards</h1>
+        <h2 class="uppercase fs-500 text-accent">Three Hats for Quay</h2>
         <p class="text-accent">
-          Step into a world-class culinary mastery at Oncore by Clare Smyth,
-          where the spirit of celebration is infused into every dish, and the
-          festive season comes alive.
+          Sydney Morning Herald Good Food Guide 2024 Awards We are honoured to
+          have achieved Three Chef Hats in this year’s
         </p>
         <a href="#" class="read-btn-white">read more</a>
       </div>
       <!-- event 3 -->
       <div class="overlay-background event-img-3 inline-padding">
-        <h1 class="uppercase fs-500 text-accent event-heading">
-          special event
-        </h1>
-        <h2 class="uppercase fs-500 text-accent">christmas day at oncore</h2>
+        <h1 class="uppercase fs-500 text-accent event-heading">menu special</h1>
+        <h2 class="uppercase fs-500 text-accent">champagne pairing</h2>
         <p class="text-accent">
-          Step into a world-class culinary mastery at Oncore by Clare Smyth,
-          where the spirit of celebration is infused into every dish, and the
-          festive season comes alive.
+          Champagne Pairing at Oncore As we sail into the festive season, we
+          hope to celebrate with you over some very
         </p>
         <a href="#" class="read-btn-white">read more</a>
       </div>
       <!-- event 4 -->
       <div class="overlay-background event-img-4 inline-padding">
-        <h1 class="uppercase fs-500 text-accent event-heading">
-          special event
-        </h1>
-        <h2 class="uppercase fs-500 text-accent">christmas day at oncore</h2>
+        <h1 class="uppercase fs-500 text-accent event-heading">awards</h1>
+        <h2 class="uppercase fs-500 text-accent">LA liste 1000</h2>
         <p class="text-accent">
-          Step into a world-class culinary mastery at Oncore by Clare Smyth,
-          where the spirit of celebration is infused into every dish, and the
-          festive season comes alive.
+          LA LISTE TOP 1000 RESTAURANTS 2024 We are honoured to have taken out
+          #5 in La Liste’s 1000 Best Restaurants
         </p>
         <a href="#" class="read-btn-white">read more</a>
       </div>
       <!-- event 5 -->
       <div class="overlay-background event-img-5 inline-padding">
-        <h1 class="uppercase fs-500 text-accent event-heading">
-          special event
-        </h1>
-        <h2 class="uppercase fs-500 text-accent">christmas day at oncore</h2>
+        <h1 class="uppercase fs-500 text-accent event-heading">awards</h1>
+        <h2 class="uppercase fs-500 text-accent">
+          Restaurant & Catering Association Awards 2023
+        </h2>
         <p class="text-accent">
-          Step into a world-class culinary mastery at Oncore by Clare Smyth,
-          where the spirit of celebration is infused into every dish, and the
-          festive season comes alive.
+          Restaurant & Catering Association Awards 2023 We are thrilled to have
+          been awarded numerous accolades in this year’s National
         </p>
         <a href="#" class="read-btn-white">read more</a>
       </div>
@@ -353,7 +372,6 @@
 
     <!-- footer -->
     <footer class="footer bg-orange">
-      <h1 class="uppercase inline-padding">oncore</h1>
       <div class="footer-wrapper inline-padding">
         <div class="footer-left">
           <div class="footer-block">
@@ -383,7 +401,10 @@
             <p>
               Crown Sydney,<br />
               Level 26/1 Barangaroo Ave, <br />Barangaroo NSW 2000 <br />
-              <span>view on <a href="#" class="text-accent">Google maps</a></span>
+              <span
+                >view on
+                <a href="#" class="underlined text-dark">Google maps</a></span
+              >
             </p>
           </div>
           <br />
@@ -398,8 +419,8 @@
 
         <div class="footer-right">
           <h2 class="uppercase fw fs-400">reservation</h2>
-          <button class="read-btn-white">make a reservation</button>
-          <p>Tel: +61 8871 7171</p>
+          <button class="footer-btn read-btn-white">make a reservation</button>
+          <p class="">Tel: +61 8871 7171</p>
           <p>
             We acknowledge the Traditional Custodians of this land upon which
             Quay sits, the Gadigal of the Eora Nation. We recognise their
