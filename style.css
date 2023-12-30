@@ -244,6 +244,7 @@ select {
 
 .underlined {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .fs-900 {
