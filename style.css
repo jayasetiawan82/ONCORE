@@ -754,4 +754,14 @@ transform-origin: center;
 }
 
 
+/* progress page */
+.progress-page-wrapper {
+  height: 100vh;
+  width: 100vw;
+}
 
+.progress-content {
+text-align: center;
+justify-items: center;
+padding-top: 10em;
+}
