@@ -369,6 +369,7 @@ section p {
   text-decoration: none;
   color: #000;
   padding: 5px 25px 3px 25px;
+  text-align: center;
 }
 
 .event-wrapper p {
@@ -406,6 +407,7 @@ transform-origin: center;
   background-color: var(--clr-light);
   transition: var(--transition);
   transform: translate(-100%);
+  z-index: 1100;
 }
 
 .show-sidebar {
@@ -753,4 +755,15 @@ transform-origin: center;
 }
 
 
+/* event */
+@media (max-width: 1300px) {
+  .event-btn-wrapper {
+    flex-direction: column;
+  }
+}
 
+.text-underlined {
+  border-bottom: #1a1a1a solid 2px;
+  padding: 5px 0;
+  max-width: fit-content;
+}
