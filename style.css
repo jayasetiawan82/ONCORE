@@ -244,6 +244,7 @@ select {
 
 .underlined {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .fs-900 {
@@ -755,15 +756,4 @@ transform-origin: center;
 }
 
 
-/* event */
-@media (max-width: 1300px) {
-  .event-btn-wrapper {
-    flex-direction: column;
-  }
-}
 
-.text-underlined {
-  border-bottom: #1a1a1a solid 2px;
-  padding: 5px 0;
-  max-width: fit-content;
-}
