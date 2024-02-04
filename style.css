@@ -193,6 +193,11 @@ select {
   padding: 20px;
 }
 
+.text-underlined {
+  border-bottom: #1a1a1a solid 2px;
+  max-width: fit-content;
+}
+
 /* color */
 
 .bg-dark {
@@ -754,6 +759,8 @@ transform-origin: center;
   font-style: italic;
   padding-bottom: 1em;
 }
+
+
 
 
 
