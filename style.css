@@ -210,7 +210,6 @@ select {
   background-color: var(--clr-gold);
 }
 
-
 .text-dark {
   color: var(--clr-dark);
 }
@@ -396,12 +395,12 @@ button {
 }
 
 .sidebar-toggle:hover .middle {
-opacity: 0;
+  opacity: 0;
 }
 
 .sidebar-toggle .line {
-transition: 1s;
-transform-origin: center;
+  transition: 1s;
+  transform-origin: center;
 }
 
 .sidebar {
@@ -432,7 +431,6 @@ transform-origin: center;
 .close-btn:hover {
   font-size: 3rem;
 }
-
 
 .sidebar ul li a {
   color: var(--clr-dark);
@@ -497,8 +495,22 @@ transform-origin: center;
   height: 50vh;
 }
 
+.about-bio-img {
+  background: url(assets/clare-smith-business.webp);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
 .private-dining-img {
   background: url(assets/dining-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.about-menu-img {
+  background: url(assets/tart.webp);
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -525,6 +537,8 @@ transform-origin: center;
   }
 
   .menu-img,
+  .about-bio-img,
+  .about-menu-img,
   .bio-img,
   .private-dining-img {
     height: 100vh;
@@ -547,12 +561,11 @@ transform-origin: center;
 }
 
 .event-heading {
- border-bottom:solid 2px rgba(255,255,255,0.5);
+  border-bottom: solid 2px rgba(255, 255, 255, 0.5);
 }
 
 .event-img-1 {
   background: url(assets/dining-2.jpg) no-repeat;
-  
 }
 
 .event-img-2 {
@@ -561,7 +574,6 @@ transform-origin: center;
 
 .event-img-3 {
   background: url(assets/coctail-1.jpg) no-repeat;
-  
 }
 
 .event-img-4 {
@@ -572,7 +584,11 @@ transform-origin: center;
   background: url(assets/dish-1.jpg) no-repeat;
 }
 
-.event-img-1, .event-img-2, .event-img-3, .event-img-4, .event-img-5 {
+.event-img-1,
+.event-img-2,
+.event-img-3,
+.event-img-4,
+.event-img-5 {
   background-size: cover;
   z-index: 10;
 }
@@ -605,7 +621,6 @@ transform-origin: center;
   opacity: 0.5;
   z-index: -1;
 }
-
 
 /* term summary */
 .term-summary {
@@ -655,16 +670,16 @@ transform-origin: center;
 /* footer */
 
 .footer-btn {
-  margin: .5em 0 .5em 0;
+  margin: 1em 0;
+  width: fit-content;
 }
 
-@media(min-width: 35em) {
+@media (min-width: 35em) {
   .footer-wrapper {
     display: flex;
     justify-content: space-evenly;
     gap: 2em;
   }
-
 }
 
 .copy-block {
@@ -680,17 +695,16 @@ transform-origin: center;
 }
 
 .footer-left > *.footer-block ul {
- padding-left: 0;
- margin-top: 0;
+  padding-left: 0;
+  margin-top: 0;
 }
 .footer-left > *.footer-block ul li {
-  text-transform: capitalize; 
- }
+  text-transform: capitalize;
+}
 
- .footer-center {
+.footer-center {
   padding-bottom: 1em;
- }
-
+}
 
 /* ------- menu page----- */
 
@@ -750,17 +764,95 @@ transform-origin: center;
 }
 
 .content li > :first-child {
- font-weight: 600;
+  font-weight: 600;
 }
 
 .italic-center-par {
-  margin: 0 auto ;
+  margin: 0 auto;
   max-width: 80vw;
   font-style: italic;
   padding-bottom: 1em;
 }
 
+/* contact form */
+.contact-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+}
 
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
+.contact-form textarea {
+  height: 100px;
+}
 
+.contact-form button {
+  background-color: #d4af37;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #f3d161;
+}
+
+/* progress page */
+
+.container {
+  height: 50vh;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.progress-wrapper {
+  background: linear-gradient(
+      45deg,
+      transparent 49%,
+      #d4af37 49% 51%,
+      transparent 51%
+    ),
+    linear-gradient(-45deg, transparent 49%, #d4af37 49% 51%, transparent 51%);
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  opacity: 20;
+  padding: 10em 0;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #000000;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin: 7em auto;
+  padding-top: 3em;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
