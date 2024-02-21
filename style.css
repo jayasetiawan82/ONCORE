@@ -460,6 +460,10 @@ button {
   .reservation-btn {
     display: none;
   }
+
+  .copy-block {
+    padding: none;
+  }
 }
 
 .reservation-btn {
@@ -483,6 +487,13 @@ button {
 
 .menu-img {
   background: url(assets/dish-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.menu-img-2 {
+  background: url(assets/dining-2.jpg);
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -537,6 +548,7 @@ button {
   }
 
   .menu-img,
+  .menu-img-2,
   .about-bio-img,
   .about-menu-img,
   .bio-img,
@@ -549,6 +561,7 @@ button {
   .left-content {
     padding-inline: 6em;
   }
+
 }
 
 /* events */
@@ -680,6 +693,10 @@ button {
     justify-content: space-evenly;
     gap: 2em;
   }
+
+  .copy-block {
+   padding: 1em 0 1em 0;
+  }
 }
 
 .copy-block {
@@ -687,7 +704,8 @@ button {
   color: var(--clr-light);
   width: 100%;
   text-align: center;
-  padding: 25px 0;
+  padding: 1em 0 3em 0;
+
 }
 
 .footer-wrapper .footer-right p {
