@@ -328,6 +328,11 @@ header {
   z-index: 100;
 }
 
+.line {
+  padding-top: 3em;
+  display: none;
+}
+
 .hero::after {
   position: absolute;
   height: 100%;
@@ -463,6 +468,11 @@ button {
 
   .copy-block {
     padding: none;
+  }
+
+  .line {
+    padding-top: 3em;
+    display: block;
   }
 }
 
@@ -874,3 +884,5 @@ button {
     transform: rotate(360deg);
   }
 }
+
+
