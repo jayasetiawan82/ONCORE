@@ -686,6 +686,7 @@ button {
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  color: #000;
 }
 
 /* footer */
