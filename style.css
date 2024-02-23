@@ -293,7 +293,6 @@ header {
   position: relative;
   z-index: 100;
   justify-content: space-between;
-  z-index: 1000;
 }
 
 .top-resevation-btn a {
@@ -328,10 +327,6 @@ header {
   z-index: 100;
 }
 
-.line {
-  padding-top: 3em;
-  display: none;
-}
 
 .hero::after {
   position: absolute;
@@ -368,6 +363,7 @@ header {
   display: block;
 }
 
+
 section p {
   margin-bottom: 15px;
 }
@@ -397,16 +393,13 @@ button {
 .hamburger {
   fill: var(--clr-light);
   cursor: pointer;
+  z-index: 1000;
 }
 
 .sidebar-toggle:hover .middle {
   opacity: 0;
 }
 
-.sidebar-toggle .line {
-  transition: 1s;
-  transform-origin: center;
-}
 
 .sidebar {
   position: fixed;
@@ -447,10 +440,18 @@ button {
   color: var(--clr-gold);
 }
 
+.transparant-line {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  display: block;
+}
+
 @media (min-width: 676px) {
   .sidebar {
     max-width: 400px;
   }
+
+ 
 }
 
 @media (min-width: 45em) {
@@ -470,10 +471,7 @@ button {
     padding: none;
   }
 
-  .line {
-    padding-top: 3em;
-    display: block;
-  }
+ 
 }
 
 .reservation-btn {
