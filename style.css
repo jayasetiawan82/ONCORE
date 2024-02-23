@@ -288,7 +288,7 @@ select {
 
 header {
   color: black;
-  padding-inline: 1em;
+ padding-right: 1em;
   padding-bottom: 1em;
   position: relative;
   z-index: 100;
