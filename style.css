@@ -424,6 +424,7 @@ button {
   transition: var(--transition);
   cursor: pointer;
   padding-left: 40px;
+  color: #000;
 }
 
 .close-btn:hover {
