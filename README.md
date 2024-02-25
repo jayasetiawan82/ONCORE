@@ -1,4 +1,4 @@
-# Ecommerce Website
+# ONCORE - Restaurant Website
 
 Inspired by Clare Smyth, a chef I deeply admire, I created a project to redesign a restaurant website. Using Figma for design and implementing HTML, CSS, and JS for the development, my goal is to create a digital space that pays homage to Clare Smyth while showcasing my learning progress in web development. This website is a testament to my admiration for Clare's culinary artistry and an opportunity to apply and refine my technical skills. 
 
