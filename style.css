@@ -645,6 +645,11 @@ button {
 }
 
 /* term summary */
+
+.terms-wrapper {
+margin-top: 1em;
+}
+
 .term-summary {
   justify-content: space-between;
 }
